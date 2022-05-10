@@ -1,0 +1,32 @@
+body {
+    font-family: $police_texte;
+    max-width: $mobile;
+    margin: 5px 0;
+}
+
+h1 {
+    font-family: $police_titre;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, nav, .fonctionnement{
+    text-align: center;
+}
+
+nav {   
+    background-color: $couleur_fond;  
+    .nav_localisation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: darken($couleur_fond, 10%);
+        padding: 15px 0;
+        border-top: solid 2px darken($couleur_fond, 30%);
+        &_paris {
+            
+        }
+    }
+}    
