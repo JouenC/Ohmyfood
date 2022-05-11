@@ -1,0 +1,7 @@
+@mixin bouton_commander {
+    border-radius: 50px;
+    background-color: /*linear-gradient (160deg,*/ $couleur_primaire/*, $couleur_secondaire)*/;
+    display: inline-flex;
+    margin: 60px;
+    padding: 15px 20px;
+}

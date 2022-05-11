@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*dimension de l'écran*/
 @font-face {
   font-family: "shrikhand";
   src: url(../../police/Shrikhand/Shrikhand-Regular.ttf);
@@ -8,10 +10,19 @@
   src: url(../../police/Roboto/Roboto-Regular.ttf);
 }
 
+.bouton_commander {
+  border-radius: 50px;
+  background-color: #9356DC;
+  display: inline-flex;
+  margin: 60px;
+  padding: 15px 20px;
+}
+
 body {
   font-family: roboto;
   max-width: 720px;
   margin: 5px 0;
+  font-size: x-large;
 }
 
 h1 {
@@ -20,6 +31,14 @@ h1 {
 
 a {
   text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
 
 header, nav, .fonctionnement {
@@ -37,5 +56,9 @@ nav .nav_localisation {
   background-color: #d9d9d9;
   padding: 15px 0;
   border-top: solid 2px #a6a6a6;
+}
+
+nav .nav_localisation_paris {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@ body {
     font-family: $police_texte;
     max-width: $mobile;
     margin: 5px 0;
+    font-size: x-large;
 }
 
 h1 {
@@ -10,6 +11,12 @@ h1 {
 
 a {
     text-decoration: none;
+    &:link {
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
 }
 
 header, nav, .fonctionnement{
@@ -17,7 +24,7 @@ header, nav, .fonctionnement{
 }
 
 nav {   
-    background-color: $couleur_fond;  
+    background-color: $couleur_fond;
     .nav_localisation {
         display: flex;
         align-items: center;
@@ -26,7 +33,7 @@ nav {
         padding: 15px 0;
         border-top: solid 2px darken($couleur_fond, 30%);
         &_paris {
-            
+            padding-left: 15px;
         }
     }
 }    
