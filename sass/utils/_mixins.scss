@@ -1,7 +1,8 @@
 @mixin bouton_commander {
     border-radius: 50px;
-    background-color: /*linear-gradient (160deg,*/ $couleur_primaire/*, $couleur_secondaire)*/;
+    background-image: linear-gradient (160deg, $couleur_primaire, $couleur_secondaire);
     display: inline-flex;
     margin: 60px;
     padding: 15px 20px;
+    /*background-image: radial-gradient(circle at 36.43% 12.71%, #ffffb4 0, #ffff93 12.5%, #ffff71 25%, #ffea4a 37.5%, #f8d110 50%, #f0b800 62.5%, #e99f00 75%, #e48600 87.5%, #e06d00 100%);/*
 }
