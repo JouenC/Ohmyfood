@@ -11,13 +11,14 @@
 }
 
 .bouton_commander {
-  background-image: linear-gradient(170deg, #ff79da 0, #9356DC 100%);
+  /*background-image: linear-gradient(170deg, $couleur_secondaire 0, $couleur_primaire 100%);*/
   box-shadow: 6px 6px 6px #cac3c3;
   box-shadow: 6px 6px 6px #cac3c3;
   padding: 15px 20px;
   margin: 60px;
   display: inline-flex;
   border-radius: 50px;
+  background: linear-gradient(170deg, #ff79da 0, #ff79da 10%, #9356DC 100%);
 }
 
 .bouton_fonctionnement {

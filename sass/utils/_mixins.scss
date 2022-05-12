@@ -3,13 +3,14 @@
 }
 
 @mixin bouton_commander {
-    background-image: linear-gradient(170deg, $couleur_secondaire 0, $couleur_primaire 100%);
+    /*background-image: linear-gradient(170deg, $couleur_secondaire 0, $couleur_primaire 100%);*/
     box-shadow: 6px 6px 6px $couleur_ombre;
     @include bouton;
     padding: 15px 20px;
     margin: 60px;
     display: inline-flex;
     border-radius: 50px;
+    background: linear-gradient(170deg, $couleur_secondaire /*-2.98%*/0, /*darken(*/$couleur_secondaire /*10%)*/ 10%, $couleur_primaire /*104.54%*/100%);
 }
 
 @mixin bouton_fonctionnement {
