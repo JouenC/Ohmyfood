@@ -37,9 +37,18 @@ nav {
         }
     }    
     & p {
-        padding: 0 35px;
+        padding: $padding_texte;
     }
     & h2 {
         padding: 0 70px;
     }
-}    
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    &_titre {
+        padding: $padding_texte;
+        text-align: left;
+    }
+}

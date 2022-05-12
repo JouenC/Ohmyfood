@@ -12,10 +12,11 @@
 
 .bouton_commander {
   border-radius: 50px;
-  background-color: #9356DC;
+  background-image: linear-gradient(170deg, #ff79da 0, #9356DC 100%);
   display: inline-flex;
   margin: 60px;
   padding: 15px 20px;
+  box-shadow: 6px 6px 6px #cac3c3;
 }
 
 body {
@@ -68,5 +69,15 @@ nav p {
 
 nav h2 {
   padding: 0 70px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement_titre {
+  padding: 0 35px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
