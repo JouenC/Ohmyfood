@@ -51,4 +51,9 @@ nav {
         padding: $padding_texte;
         text-align: left;
     }
+    &_explication {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

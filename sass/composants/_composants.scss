@@ -1,3 +1,20 @@
 .bouton_commander {
     @include bouton_commander;
 }
+
+.bouton_fonctionnement {
+    @include bouton_fonctionnement;
+    display: flex;
+    flex-direction: row;
+    &_numero {
+       @include fonctionnement_numero;
+    }
+    &_illustration {
+        color:$couleur_ombre;
+        padding: 0 30px 0 10px;
+        &_store {
+            color: $couleur_primaire;
+            padding: 0 30px 0 10px;
+        }
+    }
+}
