@@ -122,6 +122,7 @@ nav h2 {
 .carte {
   background-color: #f2f2f2;
   margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .carte_titre {
@@ -171,5 +172,24 @@ nav h2 {
 
 .carte_conteneur_restaurant_identification_coeur {
   padding-right: 50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: #737373;
+  padding: 0 35px;
+  padding-bottom: 40px;
+}
+
+footer img {
+  height: 40px;
+  object-fit: contain;
+  padding: 30px 0 30px 0;
+}
+
+footer a {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
