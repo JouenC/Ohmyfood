@@ -149,6 +149,7 @@ nav h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .carte_conteneur_restaurant_identification {
