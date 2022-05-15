@@ -51,6 +51,11 @@
   padding: 0 30px 0 10px;
 }
 
+.bordure_degradee {
+  background: linear-gradient(#bdb0b0 0, #ddcdcd 90%, #d9d9d9 100%);
+  height: 4px;
+}
+
 body {
   font-family: roboto;
   max-width: 768px;
@@ -88,7 +93,6 @@ nav .nav_localisation {
   justify-content: center;
   background-color: #d9d9d9;
   padding: 15px 0;
-  border-top: solid 2px #a6a6a6;
 }
 
 nav .nav_localisation_paris {

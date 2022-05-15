@@ -31,10 +31,9 @@ nav {
         justify-content: center;
         background-color: darken($couleur_fond, 10%);
         padding: 15px 0;
-        border-top: solid 2px darken($couleur_fond, 30%);
         &_paris {
             padding-left: 15px;
-        }
+        }        
     }    
     & p {
         padding: $padding_texte;
