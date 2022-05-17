@@ -22,3 +22,24 @@
 .bordure_degradee {
     @include bordure_degradee;
 }
+
+.carte {
+    &_conteneur {
+        &_aimer {
+            color: $couleur_primaire;
+            position: relative;
+            bottom: 117px;
+            left: 283px;
+            opacity: 0.3;
+            transform-origin: 0% 0%;
+            transition: 1000ms ease-in opacity;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                scale: 1.1;
+                opacity: 1;
+            }
+        }
+    }
+}
