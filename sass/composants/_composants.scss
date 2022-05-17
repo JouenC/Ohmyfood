@@ -30,16 +30,21 @@
             position: relative;
             bottom: 117px;
             left: 283px;
-            opacity: 0.3;
             transform-origin: 0% 0%;
-            transition: 1000ms ease-in opacity;
+            transition: 1000ms ease-in;
+            transform: scale(0.5);
             &:hover {
                 cursor: pointer;
-            }
-            &:active {
-                scale: 1.1;
-                opacity: 1;
+                
             }
         }
+        &_bouton {
+            &:active {
+                &+.carte_conteneur_aimer {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        
     }
 }
