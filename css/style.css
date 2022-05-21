@@ -2,19 +2,15 @@
 /*dimension de l'écran*/
 @keyframes coeur {
   0% {
-    /*transform: scaleY(0);*/
     opacity: 0;
   }
   12% {
-    /*transform: scaleY(0.3);*/
     opacity: 0.3;
   }
   50% {
-    /*transform: scaleY(0.6);*/
     opacity: 0.5;
   }
   78% {
-    /*transform: scaleY(0.9);*/
     opacity: 0.8;
   }
   100% {
@@ -23,6 +19,14 @@
   }
 }
 
+/*@function animation_coeur {
+    @if (opacity:0) {
+        @return animation: coeur 300ms both;
+    }
+    @else (opacity:1) {
+        @return animation: coeur 300ms both reverse;
+    }
+}*/
 @font-face {
   font-family: "shrikhand";
   src: url(../../police/Shrikhand/Shrikhand-Regular.ttf);
@@ -93,19 +97,19 @@
 }
 
 .carte_conteneur_aimer:active {
-  animation: coeur 300ms;
-  animation-fill-mode: both;
+  animation: coeur 300ms both;
 }
 
 body {
   font-family: roboto;
   max-width: 768px;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
   font-size: x-large;
 }
 
 h1 {
   font-family: shrikhand;
+  /*color: $couleur_lien;*/
 }
 
 a {
@@ -243,5 +247,19 @@ footer img {
 
 footer a {
   padding-bottom: 10px;
+}
+
+.footer_logo {
+  font-family: shrikhand;
+  color: white;
+}
+
+.footer_couverts {
+  padding-right: 10px;
+}
+
+.footer_mains {
+  padding-right: 10px;
+  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */

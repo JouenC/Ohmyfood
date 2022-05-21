@@ -17,11 +17,11 @@
     }
 }
 
-@function animation_coeur {
+/*@function animation_coeur {
     @if (opacity:0) {
         @return animation: coeur 300ms both;
     }
     @else (opacity:1) {
         @return animation: coeur 300ms both reverse;
     }
-}
+}*/
