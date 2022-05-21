@@ -1,0 +1,27 @@
+@keyframes coeur {
+    0% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    78% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@function animation_coeur {
+    @if (opacity:0) {
+        @return animation: coeur 300ms both;
+    }
+    @else (opacity:1) {
+        @return animation: coeur 300ms both reverse;
+    }
+}
