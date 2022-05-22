@@ -35,7 +35,7 @@
             color: $couleur_primaire;
             position: relative;
             bottom: 117px;
-            left: 283px;
+            left: 283px;          
             opacity: 0.5;
             z-index: 1;         
             &:hover {
@@ -44,6 +44,11 @@
             &:active {
                 animation: coeur 300ms both;
             }
-        }       
+        }      
     }
+}
+
+.menu_conteneur_carte_restaurant_aimer {
+    bottom: 71px;
+    left: 709px;
 }
