@@ -46,6 +46,7 @@
   display: inline-flex;
   border-radius: 50px;
   background: linear-gradient(170deg, #ff79da 0, #ff79da 10%, #9356DC 100%);
+  text-align: center;
 }
 
 .bouton_commander:link {
