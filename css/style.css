@@ -39,13 +39,21 @@
 
 .bouton_commander {
   /*background-image: linear-gradient(170deg, $couleur_secondaire 0, $couleur_primaire 100%);*/
-  box-shadow: 6px 6px 6px #cac3c3;
+  /*box-shadow: 6px 6px 6px $couleur_ombre;*/
   box-shadow: 6px 6px 6px #cac3c3;
   padding: 15px 20px;
   margin: 60px;
   display: inline-flex;
   border-radius: 50px;
   background: linear-gradient(170deg, #ff79da 0, #ff79da 10%, #9356DC 100%);
+}
+
+.bouton_commander:link {
+  color: white;
+}
+
+.bouton_commander:visited {
+  color: white;
 }
 
 .bouton_fonctionnement {
@@ -109,7 +117,6 @@ body {
 
 h1 {
   font-family: shrikhand;
-  /*color: $couleur_lien;*/
 }
 
 a {
@@ -117,15 +124,68 @@ a {
 }
 
 a:link {
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color: white;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .renvoie {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+  right: 140px;
 }
 
 header, nav, .fonctionnement {
   text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: #737373;
+  padding: 0 35px;
+  padding-bottom: 40px;
+}
+
+footer a {
+  padding-bottom: 10px;
+}
+
+footer a:link {
+  color: white;
+}
+
+footer a:visited {
+  color: white;
+}
+
+.footer_logo {
+  font-family: shrikhand;
+  color: white;
+}
+
+.footer_couverts {
+  padding-right: 10px;
+}
+
+.footer_mains {
+  padding-right: 10px;
+  width: 20px;
+}
+
+header .masque {
+  right: 500px;
+  /*Pour faire partir l'icône de retour page principale*/
 }
 
 nav {
@@ -228,38 +288,5 @@ nav h2 {
 
 .carte_conteneur_restaurant_identification_coeur {
   padding-right: 50px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  background-color: #737373;
-  padding: 0 35px;
-  padding-bottom: 40px;
-}
-
-footer img {
-  height: 40px;
-  object-fit: contain;
-  padding: 30px 0 30px 0;
-}
-
-footer a {
-  padding-bottom: 10px;
-}
-
-.footer_logo {
-  font-family: shrikhand;
-  color: white;
-}
-
-.footer_couverts {
-  padding-right: 10px;
-}
-
-.footer_mains {
-  padding-right: 10px;
-  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */

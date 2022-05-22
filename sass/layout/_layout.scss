@@ -7,16 +7,27 @@ body {
 
 h1 {
     font-family: $police_titre;
-    /*color: $couleur_lien;*/
 }
 
 a {
     text-decoration: none;
     &:link {
-        color: $couleur_lien;
+        color: $couleur_lien_fonce;
     }
     &:visited {
-        color: $couleur_lien;
+        color: $couleur_lien_fonce;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    & .renvoie {
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 15px;
+        right: 140px;
     }
 }
 
@@ -24,91 +35,7 @@ header, nav, .fonctionnement{
     text-align: center;
 }
 
-nav {   
-    background-color: $couleur_fond;
-    .nav_localisation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: darken($couleur_fond, 10%);
-        padding: 15px 0;
-        &_paris {
-            padding-left: 15px;
-        }        
-    }    
-    & p {
-        padding: $padding_texte;
-    }
-    & h2 {
-        padding: 0 70px;
-    }
-}
 
-.fonctionnement {
-    display: flex;
-    flex-direction: column;
-    &_titre {
-        padding: $padding_texte;
-        text-align: left;
-    }
-    &_explication {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.carte {
-    background-color: $couleur_fond;    
-    margin-top: 70px;
-    padding-bottom: 70px;
-    &_titre {
-        padding: $padding_texte;
-        padding-top: 40px;
-    }
-    &_conteneur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-        & img {
-            width: 100%;
-            object-fit: contain;
-            border-radius: 30px 30px 0 0;
-            /*transform: translateY(-25%);*/ /*Bonne solution pour recadrer une image?*/
-        }
-        &_restaurant {
-            width: 90%;
-            background-color: white;
-            border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 40px;
-            &_image {
-                max-height: 350px;
-                overflow: hidden;
-            }
-            &_identification {
-                color: black;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-                width: 100%;
-                &_texte {
-                    padding-left: 20px;
-                    &_nom {
-                        margin: 10px 10px 10px 0;
-                    }
-                }
-                &_coeur {
-                    padding-right: 50px;
-                }
-            }            
-        } 
-    }       
-}
 
 footer {
     display: flex;
@@ -117,23 +44,24 @@ footer {
     background-color:  darken($color: $couleur_fond, $amount: 50%);
     padding: $padding_texte;
     padding-bottom: 40px;    
-    & img {
-        height: 40px;
-        object-fit: contain;
-        padding: 30px 0 30px 0;
-    }
     & a {
         padding-bottom: 10px;
-    }
+        &:link {
+            color: $couleur_lien_clair;
+        }
+        &:visited {
+            color: $couleur_lien_clair;
+        }
+    }       
 }
 
 .footer {
     &_logo {
         font-family: $police_titre;
-        color: $couleur_lien;
+        color: $couleur_lien_clair;
     }
     &_couverts {
-        padding-right: 10px;
+        padding-right: 10px;     
     }
     &_mains {
         padding-right: 10px;

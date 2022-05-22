@@ -1,5 +1,11 @@
 .bouton_commander {
     @include bouton_commander;
+    &:link {
+        color: $couleur_lien_clair;
+    }
+    &:visited {
+        color: $couleur_lien_clair;
+    }
 }
 
 .bouton_fonctionnement {
