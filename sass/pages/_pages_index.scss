@@ -1,0 +1,91 @@
+header {
+    .masque {
+        right: 500px; /*Pour faire partir l'icône de retour page principale*/
+    }
+}
+
+nav {   
+    background-color: $couleur_fond;
+    .nav_localisation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: darken($couleur_fond, 10%);
+        padding: 15px 0;
+        &_paris {
+            padding-left: 15px;
+        }        
+    }    
+    & p {
+        padding: $padding_texte;
+    }
+    & h2 {
+        padding: 0 70px;
+    }
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    &_titre {
+        padding: $padding_texte;
+        text-align: left;
+    }
+    &_explication {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.carte {
+    background-color: $couleur_fond;    
+    margin-top: 70px;
+    padding-bottom: 70px;
+    &_titre {
+        padding: $padding_texte;
+        padding-top: 40px;
+    }
+    &_conteneur {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        & img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 30px 30px 0 0;
+            /*transform: translateY(-25%);*/ /*Bonne solution pour recadrer une image?*/
+        }
+        &_restaurant {
+            width: 90%;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            &_image {
+                max-height: 350px;
+                overflow: hidden;
+            }
+            &_identification {
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                width: 100%;
+                &_texte {
+                    padding-left: 20px;
+                    &_nom {
+                        margin: 10px 10px 10px 0;
+                    }
+                }
+                &_coeur {
+                    padding-right: 50px;
+                }
+            }            
+        } 
+    }       
+}
