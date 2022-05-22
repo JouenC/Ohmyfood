@@ -108,6 +108,11 @@
   animation: coeur 300ms both;
 }
 
+.menu_conteneur_carte_restaurant_aimer {
+  bottom: 71px;
+  left: 709px;
+}
+
 body {
   font-family: roboto;
   max-width: 768px;
@@ -184,6 +189,7 @@ footer a:visited {
 }
 
 header .masque {
+  position: relative;
   right: 500px;
   /*Pour faire partir l'icône de retour page principale*/
 }
@@ -288,5 +294,41 @@ nav h2 {
 
 .carte_conteneur_restaurant_identification_coeur {
   padding-right: 50px;
+}
+
+.menu_conteneur_image {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.menu_conteneur img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.menu_conteneur_carte {
+  position: absolute;
+  z-index: 1;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  width: 768px;
+  top: 575px;
+}
+
+.menu_conteneur_carte_restaurant_identification {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_conteneur_carte_restaurant_identification_nom {
+  font-family: shrikhand;
+  padding: 0 35px;
+}
+
+.menu_conteneur_carte_restaurant_identification_coeur {
+  align-items: center;
+  display: flex;
+  padding: 0 35px;
 }
 /*# sourceMappingURL=style.css.map */

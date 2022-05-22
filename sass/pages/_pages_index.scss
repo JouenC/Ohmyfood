@@ -1,5 +1,6 @@
 header {
-    .masque {
+    & .masque {
+        position:relative;
         right: 500px; /*Pour faire partir l'icône de retour page principale*/
     }
 }
