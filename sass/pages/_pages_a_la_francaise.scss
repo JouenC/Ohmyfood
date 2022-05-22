@@ -17,17 +17,28 @@
             width: $mobile;
             top: 575px;
             &_restaurant {
+                padding: $padding_texte;
                 &_identification {
                     display: flex;
                     justify-content: space-between;
                     &_nom {
                         font-family: $police_titre;
-                        padding: $padding_texte;
+                        /*padding: $padding_texte;*/
                     }
                     &_coeur {
                         align-items: center;
                         display: flex;
-                        padding: $padding_texte;
+                        /*padding: $padding_texte;*/
+                    }
+                }
+                &_carte {
+                    @include carte_menu;
+                    &_plat {
+                        font-weight: bolder;
+                    }
+                    &_prix {
+                        display: flex;
+                        justify-content: space-between;
                     }
                 }
             }
