@@ -1,0 +1,22 @@
+.menu {
+    &_conteneur {      
+        &_image {
+            position: relative;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        & img {
+            width: 100%;
+            object-fit: contain;
+        }
+        &_carte {
+            position: absolute;
+            z-index: 1;
+            background-color: $couleur_fond;
+            border-radius: 30px;
+            width: $mobile;
+            top: 575px;
+        }
+    }
+}
+
