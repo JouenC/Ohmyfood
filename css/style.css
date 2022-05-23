@@ -46,7 +46,6 @@
   display: inline-flex;
   border-radius: 50px;
   background: linear-gradient(170deg, #ff79da 0, #ff79da 10%, #9356DC 100%);
-  text-align: center;
 }
 
 .bouton_commander:link {
@@ -367,5 +366,10 @@ nav h2 {
 .menu_conteneur_carte_restaurant_carte_prix {
   display: flex;
   justify-content: space-between;
+}
+
+.menu_conteneur_carte_restaurant_commander {
+  display: flex;
+  justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
