@@ -1,4 +1,4 @@
-/*aniamtion*/
+/*animation*/
 
 .animation {
     background-color: $couleur_primaire;
@@ -6,10 +6,12 @@
     height: 500%;
     z-index: 3;
     position: absolute;
+    animation: loader_fond 100ms 4000ms both;
     &_verre {
         width: 24px;
         height: 32px;
         border: solid 3px black;
+        border-radius: 0 0 5px 5px;
         border-top: white;
         position: relative;
         top: 381px;
@@ -22,11 +24,15 @@
         position: relative;
         top: 346px;
         left: 540px;
+        transform: scaleY(0);
+        animation: loader_verre 3000ms ease-in-out 1000ms;
+        transform-origin: bottom;
     }
     &_conteneur {
         width: 26px;
         height: 82px;
         border: solid 5px black;
+        border-radius: 0 0 5px 5px;
         border-top: white;
         position: absolute;
         top: 326px;
@@ -67,5 +73,7 @@
         position: relative;
         top: 261px;
         left: 623px;
+        animation: loader_bouteille 3000ms ease-in-out 1000ms;
+        transform-origin: bottom;
     }
 }
