@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*dimension de l'écran*/
+/*keyframes*/
 @keyframes coeur {
   0% {
     opacity: 0;
@@ -63,7 +64,7 @@
   }
 }
 
-/*animation*/
+/*loader*/
 .animation {
   background-color: #9356DC;
   width: 100%;
@@ -505,18 +506,27 @@ nav h2 {
   padding: 0 35px;
   margin-top: 20px;
   display: flex;
-  flex-flow: wrap column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100px;
 }
 
 .menu_conteneur_carte_restaurant_carte_plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.menu_conteneur_carte_restaurant_carte_plat_intitulé {
   font-weight: bolder;
 }
 
 .menu_conteneur_carte_restaurant_carte_prix {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  width: 50px;
 }
 
 .menu_conteneur_carte_restaurant_commander {

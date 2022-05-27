@@ -36,11 +36,20 @@
                 &_carte {
                     @include carte_menu;
                     &_plat {
-                        font-weight: bolder;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        overflow: hidden;
+                        flex-grow: 1;
+                        &_intitulé {
+                            font-weight: bolder;
+                        }  
                     }
                     &_prix {
                         display: flex;
-                        justify-content: space-between;
+                        align-items: flex-end;
+                        padding-bottom: 5px;
+                        width: 50px;
                     }
                 }
                 &_commander {
