@@ -51,6 +51,27 @@
                         padding-bottom: 5px;
                         width: 50px;
                     }
+                    &_animation {
+                        width: 100px;
+                        background-color: $couleur_terciaire;
+                        border-radius: 0 30px 30px 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        &_valide {
+                            font-size: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            transform: scaleX(1);
+                        }
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        & > .menu_conteneur_carte_restaurant_carte_animation {
+                            animation: valide 1000ms forwards;
+                        }
+                    }                
                 }
                 &_commander {
                     display: flex;

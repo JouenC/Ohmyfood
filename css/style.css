@@ -64,92 +64,93 @@
   }
 }
 
+@keyframes valide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 /*loader*/
-.animation {
-  background-color: #9356DC;
-  width: 100%;
-  height: 500%;
-  z-index: 3;
-  position: absolute;
-  animation: loader_fond 100ms 4000ms both;
-}
-
-.animation_verre {
-  width: 24px;
-  height: 32px;
-  border: solid 3px black;
-  border-radius: 0 0 5px 5px;
-  border-top: white;
-  position: relative;
-  top: 381px;
-  left: 537px;
-}
-
-.animation_remplissage {
-  width: 24px;
-  height: 32px;
-  background-color: red;
-  position: relative;
-  top: 346px;
-  left: 540px;
-  transform: scaleY(0);
-  animation: loader_verre 3000ms ease-in-out 1000ms;
-  transform-origin: bottom;
-}
-
-.animation_conteneur {
-  width: 26px;
-  height: 82px;
-  border: solid 5px black;
-  border-radius: 0 0 5px 5px;
-  border-top: white;
-  position: absolute;
-  top: 326px;
-  left: 618px;
-}
-
-.animation_conteneur_gauche {
-  width: 23px;
-  height: 51px;
-  border-left: solid 5px black;
-  border-radius: 80%;
-  position: relative;
-  bottom: 27px;
-  right: 5px;
-}
-
-.animation_conteneur_droit {
-  width: 23px;
-  height: 51px;
-  border-right: solid 5px black;
-  border-radius: 80%;
-  position: relative;
-  bottom: 78px;
-  left: 3px;
-}
-
-.animation_conteneur_goulot {
-  width: 5px;
-  height: 11px;
-  border: solid 2px black;
-  border-top: white;
-  border-bottom: white;
-  position: absolute;
-  bottom: 108px;
-  left: 9px;
-}
-
-.animation_progression {
-  width: 26px;
-  height: 82px;
-  background-color: red;
-  position: relative;
-  top: 261px;
-  left: 623px;
-  animation: loader_bouteille 3000ms ease-in-out 1000ms;
-  transform-origin: bottom;
-}
-
+/*.animation {
+    background-color: $couleur_primaire;
+    width: 100%;
+    height: 500%;
+    z-index: 3;
+    position: absolute;
+    animation: loader_fond 100ms 4000ms both;
+    &_verre {
+        width: 24px;
+        height: 32px;
+        border: solid 3px black;
+        border-radius: 0 0 5px 5px;
+        border-top: white;
+        position: relative;
+        top: 381px;
+        left: 537px;
+    }
+    &_remplissage {
+        width: 24px;
+        height: 32px;
+        background-color: red;
+        position: relative;
+        top: 346px;
+        left: 540px;
+        transform: scaleY(0);
+        animation: loader_verre 3000ms ease-in-out 1000ms;
+        transform-origin: bottom;
+    }
+    &_conteneur {
+        width: 26px;
+        height: 82px;
+        border: solid 5px black;
+        border-radius: 0 0 5px 5px;
+        border-top: white;
+        position: absolute;
+        top: 326px;
+        left: 618px;
+        &_gauche {
+            width: 23px;
+            height: 51px;
+            border-left: solid 5px black;
+            border-radius: 80%;
+            position: relative;
+            bottom: 27px;
+            right: 5px;
+        }
+        &_droit {
+            width: 23px;
+            height: 51px;
+            border-right: solid 5px black;
+            border-radius: 80%;
+            position: relative;
+            bottom: 78px;
+            left: 3px;
+        }
+        &_goulot {
+            width: 5px;
+            height: 11px;
+            border: solid 2px black;
+            border-top: white;
+            border-bottom: white;
+            position: absolute;
+            bottom: 108px;
+            left: 9px;
+        }
+    }
+    &_progression {
+        width: 26px;
+        height: 82px;
+        background-color: red;
+        position: relative;
+        top: 261px;
+        left: 623px;
+        animation: loader_bouteille 3000ms ease-in-out 1000ms;
+        transform-origin: bottom;
+    }
+}*/
 @font-face {
   font-family: "shrikhand";
   src: url(../../police/Shrikhand/Shrikhand-Regular.ttf);
@@ -340,7 +341,7 @@ h3 {
 
 header .masque {
   position: relative;
-  right: 600px;
+  right: 700px;
   /*Pour faire partir l'icône de retour page principale*/
 }
 
@@ -503,7 +504,7 @@ nav h2 {
   background-color: white;
   box-shadow: 6px 6px 6px #cac3c3;
   border-radius: 30px;
-  padding: 0 35px;
+  padding-left: 35px;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -527,6 +528,31 @@ nav h2 {
   align-items: flex-end;
   padding-bottom: 5px;
   width: 50px;
+}
+
+.menu_conteneur_carte_restaurant_carte_animation {
+  width: 100px;
+  background-color: #99e2d0;
+  border-radius: 0 30px 30px 0;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.menu_conteneur_carte_restaurant_carte_animation_valide {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: scaleX(1);
+}
+
+.menu_conteneur_carte_restaurant_carte:hover {
+  cursor: pointer;
+}
+
+.menu_conteneur_carte_restaurant_carte:hover > .menu_conteneur_carte_restaurant_carte_animation {
+  animation: valide 1000ms forwards;
 }
 
 .menu_conteneur_carte_restaurant_commander {
