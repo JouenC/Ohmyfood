@@ -415,6 +415,7 @@ nav h2 {
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
+  position: relative;
 }
 
 .carte_conteneur_restaurant_identification_texte {
@@ -427,6 +428,16 @@ nav h2 {
 
 .carte_conteneur_restaurant_identification_coeur {
   padding-right: 50px;
+}
+
+.carte_conteneur_restaurant_identification_nouveau {
+  color: #4acbab;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 1232px;
+  right: 448px;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .menu_conteneur_image {
