@@ -65,9 +65,9 @@
 
 @keyframes valide {
     0% {
-        transform: scaleX(0);
+        width: 0;
     }
     100% {
-        transform: scaleX(1);
+        width: 100px;
     }
 }

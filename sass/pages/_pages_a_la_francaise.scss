@@ -52,18 +52,18 @@
                         width: 50px;
                     }
                     &_animation {
-                        width: 100px;
+                        width: 0;
                         background-color: $couleur_terciaire;
                         border-radius: 0 30px 30px 0;
                         transform-origin: right;
-                        transform: scaleX(0);
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         &_valide {
                             font-size: 40px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            
                             color: white;
-                            transform: scaleX(1);
                         }
                     }
                     &:hover {
