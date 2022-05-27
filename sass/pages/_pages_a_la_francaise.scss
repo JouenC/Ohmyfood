@@ -16,8 +16,10 @@
             border-radius: 30px;
             width: $mobile;
             top: 575px;
+            width: 100%;
             &_restaurant {
                 padding: $padding_texte;
+                position: relative;
                 &_identification {
                     display: flex;
                     justify-content: space-between;

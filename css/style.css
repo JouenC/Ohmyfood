@@ -214,25 +214,41 @@
 }
 
 .carte_conteneur_aimer {
-  color: #9356DC;
   position: relative;
-  bottom: 117px;
-  left: 283px;
+}
+
+.carte_conteneur_aimer_animation {
+  top: 377px;
+  left: 312px;
+  color: #9356DC;
+  position: absolute;
   opacity: 0.5;
   z-index: 1;
 }
 
-.carte_conteneur_aimer:hover {
+.carte_conteneur_aimer_animation:hover {
   cursor: pointer;
 }
 
-.carte_conteneur_aimer:active {
+.carte_conteneur_aimer_animation:active {
   animation: coeur 300ms both;
 }
 
 .menu_conteneur_carte_restaurant_aimer {
-  bottom: 71px;
+  bottom: 1517px;
   left: 709px;
+  color: #9356DC;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.menu_conteneur_carte_restaurant_aimer:hover {
+  cursor: pointer;
+}
+
+.menu_conteneur_carte_restaurant_aimer:active {
+  animation: coeur 300ms both;
 }
 
 .menu_conteneur_carte_restaurant_bordure {
@@ -243,7 +259,7 @@
 
 body {
   font-family: roboto;
-  max-width: 768px;
+  min-width: 768px;
   margin: 5px 0 0 0;
   font-size: x-large;
 }
@@ -323,7 +339,7 @@ h3 {
 
 header .masque {
   position: relative;
-  right: 500px;
+  right: 600px;
   /*Pour faire partir l'icône de retour page principale*/
 }
 
@@ -458,10 +474,12 @@ nav h2 {
   border-radius: 30px;
   width: 768px;
   top: 575px;
+  width: 100%;
 }
 
 .menu_conteneur_carte_restaurant {
   padding: 0 35px;
+  position: relative;
 }
 
 .menu_conteneur_carte_restaurant_identification {

@@ -32,27 +32,50 @@
 .carte {
     &_conteneur {
         &_aimer {
-            color: $couleur_primaire;
             position: relative;
-            bottom: 117px;
-            left: 283px;          
-            opacity: 0.5;
-            z-index: 1;         
-            &:hover {
-                cursor: pointer;                  
-            }
-            &:active {
-                animation: coeur 300ms both;
+            &_animation {
+                top: 377px;
+                left: 312px;          
+                @include remplissage_coeur;
+                &:hover {
+                    cursor: pointer;                  
+                }
+                &:active {
+                    animation: coeur 300ms both;     
+                }
             }
         }      
     }
 }
 
-.menu_conteneur_carte_restaurant_aimer {
-    bottom: 71px;
-    left: 709px;
+.menu {
+    &_conteneur {
+        &_carte {
+            &_restaurant {
+                &_aimer {
+                    bottom: 1517px;
+                    left: 709px;
+                    @include remplissage_coeur;         
+                    &:hover {
+                        cursor: pointer;                  
+                    }
+                    &:active {
+                        animation: coeur 300ms both;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.menu_conteneur_carte_restaurant_bordure {
-    @include bordure_menu;
+.menu {
+    &_conteneur {
+        &_carte {
+            &_restaurant {
+                &_bordure {
+                    @include bordure_menu;
+                }
+            }
+        }
+    }
 }

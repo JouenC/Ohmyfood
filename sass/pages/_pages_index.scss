@@ -1,7 +1,7 @@
 header {
     & .masque {
         position:relative;
-        right: 500px; /*Pour faire partir l'icône de retour page principale*/
+        right: 600px; /*Pour faire partir l'icône de retour page principale*/
     }
 }
 
@@ -50,7 +50,7 @@ nav {
     &_conteneur {
         display: flex;
         flex-direction: column;
-        align-items: center;    
+        align-items: center; 
         & img {
             width: 100%;
             object-fit: contain;
