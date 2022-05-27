@@ -66,6 +66,7 @@ nav {
             justify-content: center;
             align-items: center;
             margin-bottom: 40px;
+            position: relative;
             &_image {
                 max-height: 350px;
                 overflow: hidden;
@@ -77,7 +78,6 @@ nav {
                 align-items: center;
                 margin-bottom: 20px;
                 width: 100%;
-                position: relative;
                 &_texte {
                     padding-left: 20px;
                     &_nom {
@@ -88,11 +88,11 @@ nav {
                     padding-right: 50px;
                 }
                 &_nouveau {
-                    color: darken($couleur_terciaire, 20%);
+                    color: darken($couleur_terciaire, 50%);
                     background-color: $couleur_terciaire;
                     position: absolute;
-                    top: 1232px;
-                    right: 448px;
+                    top: 15px;
+                    right: 20px;
                     padding: 10px 15px;
                     border-radius: 5px;
                 }
