@@ -69,7 +69,7 @@
                     &:hover {
                         cursor: pointer;
                         & > .menu_conteneur_carte_restaurant_carte_animation {
-                            animation: valide 1000ms forwards;
+                            animation: valide 1000ms forwards/*, cercle_roule 1000ms forwards*/;
                         }
                         & > .menu_conteneur_carte_restaurant_carte_animation_valide {
                             animation: cercle_roule 1000ms forwards;

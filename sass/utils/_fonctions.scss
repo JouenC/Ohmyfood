@@ -74,9 +74,18 @@
 
 @keyframes cercle_roule {
     0% {
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(1);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation_menu {
+    from {
+        transform: translate(-6000px);
+    }
+    to {
+        transform: translate(0);
     }
 }
