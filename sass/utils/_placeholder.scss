@@ -14,6 +14,8 @@
         width: 100px;
         height: 100px;
         position: relative;
+        bottom: 1765px;
+        right: 520px;
     }
     &_verre {
         width: 24px;
@@ -81,7 +83,7 @@
         position: relative;
         top: 261px;
         left: 623px;
-        animation: loader_bouteille 3000ms ease-in-out 1000ms 10;
+        animation: loader_bouteille 3000ms ease-in-out 1000ms;
         transform-origin: bottom;
     }
 }
