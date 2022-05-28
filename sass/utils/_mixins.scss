@@ -56,6 +56,6 @@
 @mixin remplissage_coeur {
     color: $couleur_primaire;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0;
     z-index: 1;
 }

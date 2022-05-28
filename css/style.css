@@ -239,7 +239,7 @@
   left: 0px;
   color: #9356DC;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0;
   z-index: 1;
 }
 
@@ -257,7 +257,7 @@
   left: 0px;
   color: #9356DC;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0;
   z-index: 1;
 }
 
