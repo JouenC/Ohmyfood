@@ -73,6 +73,15 @@
   }
 }
 
+@keyframes cercle_roule {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1);
+  }
+}
+
 /*loader*/
 .animation {
   background-color: #9356DC;
@@ -561,6 +570,7 @@ nav h2 {
 .menu_conteneur_carte_restaurant_carte_animation_valide {
   font-size: 40px;
   color: white;
+  /*animation: cercle_roule 1000ms forwards 50;*/
 }
 
 .menu_conteneur_carte_restaurant_carte:hover {
@@ -569,6 +579,10 @@ nav h2 {
 
 .menu_conteneur_carte_restaurant_carte:hover > .menu_conteneur_carte_restaurant_carte_animation {
   animation: valide 1000ms forwards;
+}
+
+.menu_conteneur_carte_restaurant_carte:hover > .menu_conteneur_carte_restaurant_carte_animation_valide {
+  animation: cercle_roule 1000ms forwards;
 }
 
 .menu_conteneur_carte_restaurant_commander {
