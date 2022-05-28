@@ -234,41 +234,38 @@
   height: 4px;
 }
 
-.carte_conteneur_aimer {
-  position: relative;
-}
-
-.carte_conteneur_aimer_animation {
-  top: 377px;
-  left: 312px;
+.carte_conteneur_restaurant_identification_coeur_animation {
+  top: 0px;
+  left: 0px;
   color: #9356DC;
   position: absolute;
   opacity: 0.5;
   z-index: 1;
 }
 
-.carte_conteneur_aimer_animation:hover {
+.carte_conteneur_restaurant_identification_coeur_animation:hover {
   cursor: pointer;
-}
-
-.carte_conteneur_aimer_animation:active {
   animation: coeur 300ms both;
 }
 
-.menu_conteneur_carte_restaurant_aimer {
-  bottom: 1517px;
-  left: 709px;
+.carte_conteneur_restaurant_identification_coeur_animation:active {
+  animation: coeur 300ms both;
+}
+
+.menu_conteneur_carte_restaurant_identification_coeur_aimer {
+  bottom: 42px;
+  left: 0px;
   color: #9356DC;
   position: absolute;
   opacity: 0.5;
   z-index: 1;
 }
 
-.menu_conteneur_carte_restaurant_aimer:hover {
+.menu_conteneur_carte_restaurant_identification_coeur_aimer:hover {
   cursor: pointer;
 }
 
-.menu_conteneur_carte_restaurant_aimer:active {
+.menu_conteneur_carte_restaurant_identification_coeur_aimer:active {
   animation: coeur 300ms both;
 }
 
@@ -464,6 +461,7 @@ nav h2 {
 }
 
 .carte_conteneur_restaurant_identification_coeur {
+  position: relative;
   padding-right: 50px;
 }
 
@@ -516,7 +514,7 @@ nav h2 {
 .menu_conteneur_carte_restaurant_identification_coeur {
   align-items: center;
   display: flex;
-  /*padding: $padding_texte;*/
+  position: relative;
 }
 
 .menu_conteneur_carte_restaurant_carte {

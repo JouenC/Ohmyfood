@@ -31,18 +31,23 @@
 
 .carte {
     &_conteneur {
-        &_aimer {
-            position: relative;
-            &_animation {
-                top: 377px;
-                left: 312px;          
-                @include remplissage_coeur;
-                &:hover {
-                    cursor: pointer;                  
+        &_restaurant {
+            &_identification {
+                &_coeur {
+                    &_animation {
+                        top: 0px;
+                        left: 0px;       
+                        @include remplissage_coeur;
+                        &:hover {
+                            cursor: pointer;
+                            animation: coeur 300ms both;
+                        }
+                        &:active {
+                            animation: coeur 300ms both;   
+                        }
+                    }
                 }
-                &:active {
-                    animation: coeur 300ms both;     
-                }
+            
             }
         }      
     }
@@ -52,15 +57,19 @@
     &_conteneur {
         &_carte {
             &_restaurant {
-                &_aimer {
-                    bottom: 1517px;
-                    left: 709px;
-                    @include remplissage_coeur;         
-                    &:hover {
-                        cursor: pointer;                  
-                    }
-                    &:active {
-                        animation: coeur 300ms both;
+                &_identification {
+                    &_coeur {
+                        &_aimer {
+                            bottom: 42px;
+                            left: 0px;
+                            @include remplissage_coeur;         
+                            &:hover {
+                                cursor: pointer;                  
+                            }
+                            &:active {
+                                animation: coeur 300ms both;
+                            }   
+                        }
                     }
                 }
             }
