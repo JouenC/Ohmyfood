@@ -62,8 +62,8 @@
                         align-items: center;
                         &_valide {
                             font-size: 40px;
-                            
                             color: white;
+                            /*animation: cercle_roule 1000ms forwards 50;*/
                         }
                     }
                     &:hover {
@@ -71,8 +71,11 @@
                         & > .menu_conteneur_carte_restaurant_carte_animation {
                             animation: valide 1000ms forwards;
                         }
-                    }                
-                }
+                        & > .menu_conteneur_carte_restaurant_carte_animation_valide {
+                            animation: cercle_roule 1000ms forwards;
+                        }
+                    }
+                }                
                 &_commander {
                     display: flex;
                     justify-content: center;
