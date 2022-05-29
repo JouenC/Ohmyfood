@@ -6,6 +6,9 @@
     &:visited {
         color: $couleur_lien_clair;
     }
+    &:hover {
+        filter: brightness(120%);
+    }
 }
 
 .bouton_fonctionnement {

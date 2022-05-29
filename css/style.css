@@ -253,6 +253,10 @@
   color: white;
 }
 
+.bouton_commander:hover {
+  filter: brightness(120%);
+}
+
 .bouton_fonctionnement {
   background-color: #f2f2f2;
   box-shadow: 6px 6px 6px #cac3c3;
@@ -597,7 +601,7 @@ nav h2 {
 .menu_conteneur_carte_restaurant_carte_prix {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 5px;
+  padding: 0 15px 5px 0;
   width: 50px;
 }
 
