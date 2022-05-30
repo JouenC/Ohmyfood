@@ -592,6 +592,8 @@ nav h2 {
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   flex-grow: 1;
 }
 
