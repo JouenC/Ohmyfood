@@ -35,6 +35,7 @@
                 }
                 &_carte {
                     @include carte_menu;
+                    transform: translate(-6000px);
                     &_plat {
                         display: flex;
                         flex-direction: column;
