@@ -335,7 +335,7 @@
 
 body {
   font-family: roboto;
-  min-width: 768px;
+  width: 100%;
   margin: 5px 0 0 0;
   font-size: x-large;
 }
@@ -646,20 +646,37 @@ nav h2 {
   footer {
     align-items: center;
   }
+  h2 {
+    text-align: center;
+  }
+  .fonctionnement_titre {
+    text-align: center;
+  }
+  .fonctionnement_explication {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bouton_fonctionnement {
+    width: 45%;
+    margin: 17px;
+  }
 }
 
-.fonctionnement_titre {
-  text-align: center;
-}
-
-.fonctionnement_explication {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.bouton_fonctionnement {
-  width: 45%;
-  margin: 17px;
+@media screen and (min-width: 1200px) {
+  .bouton_fonctionnement {
+    width: 30%;
+  }
+  .carte_conteneur {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carte_conteneur_restaurant {
+    width: 45%;
+    margin: 15px;
+  }
+  .menu_conteneur_carte_restaurant_carte {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

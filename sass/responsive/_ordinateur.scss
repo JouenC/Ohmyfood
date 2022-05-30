@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+    
+    .bouton_fonctionnement {
+        width: 30%;
+    }
+
+    .carte {
+        &_conteneur {
+            flex-wrap: wrap;
+            justify-content: center;
+            &_restaurant {
+                width: 45%;
+                margin: 15px;
+            }
+        }
+    }
+
+    .menu {
+        &_conteneur {
+            &_carte {
+                &_restaurant {
+                    &_carte {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
