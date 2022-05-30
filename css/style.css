@@ -93,9 +93,9 @@
 
 /*loader*/
 .animation {
-  background-color: #9356DC;
+  background-color: white;
   width: 100%;
-  height: 500%;
+  height: 490%;
   z-index: 3;
   position: absolute;
   animation: loader_fond 100ms 4000ms both;
@@ -640,5 +640,26 @@ nav h2 {
 .menu_conteneur_carte_restaurant_commander {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    align-items: center;
+  }
+}
+
+.fonctionnement_titre {
+  text-align: center;
+}
+
+.fonctionnement_explication {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bouton_fonctionnement {
+  width: 45%;
+  margin: 17px;
 }
 /*# sourceMappingURL=style.css.map */

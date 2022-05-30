@@ -1,0 +1,22 @@
+@media screen and (min-width: $tablette) {
+    footer {
+        align-items: center;
+    }
+}
+
+.fonctionnement {
+    &_titre {
+        text-align: center;
+    }
+    &_explication {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.bouton_fonctionnement {
+    width: 45%;
+    margin: 17px;
+}
+    
