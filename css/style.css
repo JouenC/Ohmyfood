@@ -95,7 +95,7 @@
 .animation {
   background-color: white;
   width: 100%;
-  height: 490%;
+  height: 320%;
   z-index: 3;
   position: absolute;
   animation: loader_fond 100ms 4000ms both;
@@ -108,7 +108,7 @@
   width: 100px;
   height: 100px;
   position: relative;
-  bottom: 1765px;
+  bottom: 1100px;
   right: 520px;
 }
 
@@ -677,6 +677,7 @@ nav h2 {
     width: 30%;
   }
   .carte_conteneur {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
