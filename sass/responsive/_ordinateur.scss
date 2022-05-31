@@ -1,5 +1,6 @@
 @media screen and (min-width: 1200px) {
-    
+
+    /*index.htlm*/
     .bouton_fonctionnement {
         width: 30%;
     }
@@ -15,6 +16,17 @@
         }
     }
 
+    /*menu.html*/
+    .fa-arrow-left {
+        opacity: 0;
+    }
+    header {
+        & p {
+            z-index: 1;
+            opacity: 1;
+        }
+    }
+
     .menu {
         &_conteneur {
             &_carte {
@@ -25,5 +37,10 @@
                 }
             }
         }
+    }
+
+    .ordinateur {
+        display: flex;
+        justify-content: space-between;
     }
 }
