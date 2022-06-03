@@ -23,20 +23,24 @@ a {
 header {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     & .renvoie {
         display: flex;
         align-items: center;
-        position: relative;
-        bottom: 15px;
-        right: 140px;
         font-family: $police_titre;
+        padding: $padding_texte;
     }
     & p {
         opacity: 0;
         position: absolute;
         z-index: -1;
+        padding: $padding_texte;
     }
+}
+
+.droite_header {
+    height: 100px;
+    width: 100px;
 }
 
 header, nav, .fonctionnement{

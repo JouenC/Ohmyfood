@@ -1,19 +1,21 @@
 @media screen and (min-width: $ordinateur) {
 
     /*index.htlm*/
+    .animation .centrage {
+        bottom: 1150px;
+    }
+
     .bouton_fonctionnement {
         width: 30%;
     }
 
-    .carte {
-        &_conteneur {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            &_restaurant {
-                width: 45%;
-                margin: 15px;
-            }
+    .carte_conteneur {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_restaurant {
+            width: 45%;
+            margin: 15px;
         }
     }
 
@@ -28,16 +30,8 @@
         }
     }
 
-    .menu {
-        &_conteneur {
-            &_carte {
-                &_restaurant {
-                    &_carte {
-                        width: 30%;
-                    }
-                }
-            }
-        }
+    .menu_conteneur_carte_restaurant_carte {
+        width: 30%;
     }
 
     .ordinateur {

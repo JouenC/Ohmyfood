@@ -84,10 +84,12 @@
 
 @keyframes animation_menu {
   from {
-    transform: translate(-6000px);
+    transform: translateY(30px);
+    opacity: 0;
   }
   to {
-    transform: translate(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -108,8 +110,8 @@
   width: 100px;
   height: 100px;
   position: relative;
-  /*bottom: 1100px;*/
-  /*right: 520px;*/
+  bottom: 1745px;
+  right: 520px;
 }
 
 .animation_verre {
@@ -282,9 +284,18 @@
   padding: 0 30px 0 10px;
 }
 
-.bouton_fonctionnement_illustration_store {
+.bouton_fonctionnement_texte {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bouton_fonctionnement:hover {
+  background-color: #99e2d0;
+}
+
+.bouton_fonctionnement:hover > .bouton_fonctionnement_illustration {
   color: #9356DC;
-  padding: 0 30px 0 10px;
 }
 
 .bordure_degradee {
@@ -360,22 +371,26 @@ a:visited {
 header {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header .renvoie {
   display: flex;
   align-items: center;
-  position: relative;
-  bottom: 15px;
-  right: 140px;
   font-family: shrikhand;
+  padding: 0 35px;
 }
 
 header p {
   opacity: 0;
   position: absolute;
   z-index: -1;
+  padding: 0 35px;
+}
+
+.droite_header {
+  height: 100px;
+  width: 100px;
 }
 
 header, nav, .fonctionnement {
@@ -503,6 +518,7 @@ nav h2 {
   align-items: center;
   margin-bottom: 40px;
   position: relative;
+  box-shadow: 6px 6px 6px #cac3c3;
 }
 
 .carte_conteneur_restaurant_image {
@@ -593,7 +609,8 @@ nav h2 {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  transform: translate(-6000px);
+  transform: translateY(30px);
+  opacity: 0;
 }
 
 .menu_conteneur_carte_restaurant_carte_plat {
@@ -680,6 +697,9 @@ nav h2 {
 
 @media screen and (min-width: 1200px) {
   /*index.htlm*/
+  .animation .centrage {
+    bottom: 1150px;
+  }
   .bouton_fonctionnement {
     width: 30%;
   }

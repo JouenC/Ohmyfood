@@ -21,9 +21,16 @@
     &_illustration {
         color:$couleur_ombre;
         padding: 0 30px 0 10px;
-        &_store {
-            color: $couleur_primaire;
-            padding: 0 30px 0 10px;
+    }
+    &_texte {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        background-color: $couleur_terciaire;
+        & > .bouton_fonctionnement_illustration {
+            color: $couleur_primaire
         }
     }
 }
@@ -32,62 +39,31 @@
     @include bordure_degradee;
 }
 
-.carte {
-    &_conteneur {
-        &_restaurant {
-            &_identification {
-                &_coeur {
-                    &_animation {
-                        top: 0px;
-                        left: 0px;       
-                        @include remplissage_coeur;
-                        &:hover {
-                            cursor: pointer;
-                            animation: coeur 300ms both;
-                        }
-                        &:active {
-                            animation: coeur 300ms both;   
-                        }
-                    }
-                }
-            
-            }
-        }      
+.carte_conteneur_restaurant_identification_coeur_animation {
+    top: 0px;
+    left: 0px;       
+    @include remplissage_coeur;
+    &:hover {
+        cursor: pointer;
+        animation: coeur 300ms both;
+    }
+    &:active {
+        animation: coeur 300ms both;   
     }
 }
 
-.menu {
-    &_conteneur {
-        &_carte {
-            &_restaurant {
-                &_identification {
-                    &_coeur {
-                        &_aimer {
-                            bottom: 42px;
-                            left: 0px;
-                            @include remplissage_coeur;         
-                            &:hover {
-                                cursor: pointer;                  
-                            }
-                            &:active {
-                                animation: coeur 300ms both;
-                            }   
-                        }
-                    }
-                }
-            }
-        }
+.menu_conteneur_carte_restaurant_identification_coeur_aimer {
+    bottom: 42px;
+    left: 0px;
+    @include remplissage_coeur;         
+    &:hover {
+        cursor: pointer;                  
+    }
+    &:active {
+        animation: coeur 300ms both;
     }
 }
 
-.menu {
-    &_conteneur {
-        &_carte {
-            &_restaurant {
-                &_bordure {
-                    @include bordure_menu;
-                }
-            }
-        }
-    }
+.menu_conteneur_carte_restaurant_bordure {
+    @include bordure_menu;
 }

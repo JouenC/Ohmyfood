@@ -67,6 +67,7 @@ nav {
             align-items: center;
             margin-bottom: 40px;
             position: relative;
+            @include bouton;
             &_image {
                 max-height: 350px;
                 overflow: hidden;
