@@ -95,7 +95,7 @@
 .animation {
   background-color: white;
   width: 100%;
-  height: 320%;
+  height: 100%;
   z-index: 3;
   position: absolute;
   animation: loader_fond 100ms 4000ms both;
@@ -108,8 +108,8 @@
   width: 100px;
   height: 100px;
   position: relative;
-  bottom: 1100px;
-  right: 520px;
+  /*bottom: 1100px;*/
+  /*right: 520px;*/
 }
 
 .animation_verre {
@@ -338,6 +338,7 @@ body {
   width: 100%;
   margin: 5px 0 0 0;
   font-size: x-large;
+  position: relative;
 }
 
 h1 {
@@ -600,13 +601,20 @@ nav h2 {
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   flex-grow: 1;
 }
 
 .menu_conteneur_carte_restaurant_carte_plat_intitulé {
   font-weight: bolder;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu_conteneur_carte_restaurant_carte_plat_ingrédient {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu_conteneur_carte_restaurant_carte_prix {
@@ -630,7 +638,6 @@ nav h2 {
 .menu_conteneur_carte_restaurant_carte_animation_valide {
   font-size: 40px;
   color: white;
-  /*animation: cercle_roule 1000ms forwards 50;*/
 }
 
 .menu_conteneur_carte_restaurant_carte:hover {
@@ -641,7 +648,7 @@ nav h2 {
   animation: valide 1000ms forwards;
 }
 
-.menu_conteneur_carte_restaurant_carte:hover > .menu_conteneur_carte_restaurant_carte_animation_valide {
+.menu_conteneur_carte_restaurant_carte:hover > .menu_conteneur_carte_restaurant_carte_animation > .menu_conteneur_carte_restaurant_carte_animation_valide {
   animation: cercle_roule 1000ms forwards;
 }
 

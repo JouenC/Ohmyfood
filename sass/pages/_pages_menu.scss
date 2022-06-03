@@ -41,12 +41,18 @@
                         flex-direction: column;
                         justify-content: space-around;
                         overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
                         flex-grow: 1;
                         &_intitulé {
                             font-weight: bolder;
-                        }  
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        &_ingrédient {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
                     }
                     &_prix {
                         display: flex;
@@ -66,17 +72,16 @@
                         &_valide {
                             font-size: 40px;
                             color: white;
-                            /*animation: cercle_roule 1000ms forwards 50;*/
                         }
                     }
                     &:hover {
                         cursor: pointer;
                         & > .menu_conteneur_carte_restaurant_carte_animation {
-                            animation: valide 1000ms forwards/*, cercle_roule 1000ms forwards*/;
-                        }
-                        & > .menu_conteneur_carte_restaurant_carte_animation_valide {
-                            animation: cercle_roule 1000ms forwards;
-                        }
+                            animation: valide 1000ms forwards;
+                            & > .menu_conteneur_carte_restaurant_carte_animation_valide {
+                                animation: cercle_roule 1000ms forwards;
+                            }
+                        }    
                     }
                 }                
                 &_commander {
