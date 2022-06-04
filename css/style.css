@@ -575,7 +575,7 @@ nav h2 {
   background-color: #f2f2f2;
   border-radius: 30px;
   width: 768px;
-  top: 575px;
+  top: 450px;
   width: 100%;
 }
 
@@ -628,7 +628,7 @@ nav h2 {
   text-overflow: ellipsis;
 }
 
-.menu_conteneur_carte_restaurant_carte_plat_ingrédient {
+.menu_conteneur_carte_restaurant_carte_plat_ingredient {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
