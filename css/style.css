@@ -726,6 +726,7 @@ nav h2 {
   .ordinateur {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
