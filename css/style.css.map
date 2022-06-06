@@ -4,9 +4,9 @@
     "sources": [
         "../sass/style.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_fonctions.scss",
+        "../sass/utils/_keyframes.scss",
         "../sass/utils/_mixins.scss",
-        "../sass/utils/_placeholder.scss",
+        "../sass/utils/_loader.scss",
         "../sass/base/_base.scss",
         "../sass/composants/_composants.scss",
         "../sass/layout/_layout.scss",
