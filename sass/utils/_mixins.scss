@@ -54,6 +54,7 @@
 
 @mixin remplissage_coeur {
     color: $couleur_primaire;
+    /*background: linear-gradient(170deg, $couleur_secondaire 0, $couleur_secondaire 10%, $couleur_primaire 100%);*/
     position: absolute;
     opacity: 0;
     z-index: 1;
