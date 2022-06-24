@@ -307,7 +307,9 @@
   top: 0px;
   left: 0px;
   color: #9356DC;
-  /*background: linear-gradient(170deg, $couleur_secondaire 0, $couleur_secondaire 10%, $couleur_primaire 100%);*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   opacity: 0;
   z-index: 1;
@@ -326,7 +328,9 @@
   bottom: 42px;
   left: 0px;
   color: #9356DC;
-  /*background: linear-gradient(170deg, $couleur_secondaire 0, $couleur_secondaire 10%, $couleur_primaire 100%);*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   opacity: 0;
   z-index: 1;
